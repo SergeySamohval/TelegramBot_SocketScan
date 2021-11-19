@@ -136,44 +136,4 @@ def user_answer_port_range(message):
 
 
 
-
-
-
-
-
-
-#@bot.message_handler(content_types=['text'])
-#def bot_message(message):
-#    if call.data == "IP":
-#        bot.send_message(message.chat.id, "sdfsdfsdfsdfsdf")
-
-#Создаем хендлер для проверки ID и ограничения доступа к боту
-#@bot.message_handler(func=lambda message: True)
-#def some(message):
- #  if message.chat.id in users:
-  #    markup = types.ReplyKeyboardMarkup(resize_keyboard = True)
-   #   itemIP = types.KeyboardButton("IP адрес")
-    #  itemDomainName = types.KeyboardButton("Доменное имя")
-#
- #     markup.add(itemIP, itemDomainName)
-#
- #     bot.send_message(message.chat.id, "Привет," + message.from_user.first_name, reply_markup=markup)
-##
-
-  # elif message.chat.id not in users:
-   #   bot.send_message(message.chat.id, "Привет," + message.from_user.first_name +
-    #                   "." + " Извини, но у тебя нет доступа")
-#@bot.message_handler(content_types=['text'])
-#def bot_message(message):
-#   if message.text == "IP адрес":
-#       bot.send_message(message.chat.id, "Введите IP адрес который нужно просканировать:")
-
- #      pass
-
-
-
-
-
-
-
 bot.infinity_polling()
